@@ -1,4 +1,6 @@
 import streamlit as st
+
+st.set_page_config(page_title='Movie Genre Classification App')
 import joblib
 import pandas as pd
 import nltk
@@ -63,7 +65,7 @@ except Exception as e:
     st.error("Failed to load model components. Please check the model files.")
     st.stop()
 
-st.title('Movie Genre Classification')
+st.title('Movie Genre Classification App')
 
 description = st.text_area('Movie Description', height=150)
 if st.button('Predict Genre'):
@@ -108,13 +110,9 @@ feature_importance_df = pd.DataFrame({
 
 # Create a bar chart using Streamlit
 st.bar_chart(
-    feature_importance_df.set_index('Feature')['Importance (%)'],
+    feature_importance_df.set_index('Feature'),
     use_container_width=True
 )
-
-# Display the numerical values
-for feature, imp in zip(top_features[:10], top_importance[:10]):
-    st.write(f"**{feature}**: {imp*100:.2f}%")
 
 st.header('Example Misclassifications')
 for _, row in misclassified.iterrows():

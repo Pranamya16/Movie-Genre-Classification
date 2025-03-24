@@ -17,5 +17,5 @@ Develop a machine learning model to classify movies into genres based on plot de
 ## Steps to Run
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/Pranamya16/movie-genre-classification.git
+   git clone https://github.com/Pranamya16/Movie-Genre-Classification.git
    cd movie-genre-classification

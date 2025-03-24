@@ -1,0 +1,415 @@
+2025-03-24 21:06:17,372 - INFO - Model Accuracy: 0.5796
+2025-03-24 21:06:17,459 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+      action       0.40      0.35      0.37      1314
+       adult       0.53      0.28      0.37       590
+   adventure       0.33      0.19      0.24       775
+   animation       0.16      0.04      0.07       498
+   biography       0.00      0.00      0.00       264
+      comedy       0.52      0.62      0.56      7446
+       crime       0.00      0.00      0.00       505
+ documentary       0.67      0.85      0.75     13096
+       drama       0.58      0.71      0.64     13612
+      family       0.00      0.00      0.00       783
+     fantasy       0.00      0.00      0.00       322
+   game-show       0.90      0.49      0.63       193
+     history       0.00      0.00      0.00       243
+      horror       0.57      0.64      0.60      2204
+       music       0.61      0.47      0.53       731
+     musical       0.33      0.00      0.01       276
+     mystery       0.00      0.00      0.00       318
+        news       0.00      0.00      0.00       181
+  reality-tv       0.39      0.22      0.28       883
+     romance       0.81      0.02      0.04       672
+      sci-fi       0.41      0.25      0.31       646
+       short       0.45      0.34      0.39      5072
+       sport       0.76      0.20      0.32       431
+   talk-show       0.46      0.21      0.29       391
+    thriller       0.31      0.18      0.23      1590
+         war       0.00      0.00      0.00       132
+     western       0.83      0.83      0.83      1032
+
+    accuracy                           0.58     54200
+   macro avg       0.37      0.26      0.28     54200
+weighted avg       0.53      0.58      0.54     54200
+
+2025-03-24 21:06:17,514 - INFO - Total misclassified examples: 22786
+2025-03-24 22:38:41,046 - INFO - Loading and splitting data...
+2025-03-24 22:38:41,607 - INFO - Preprocessing data...
+2025-03-24 22:41:10,114 - INFO - Loading and splitting data...
+2025-03-24 22:41:10,742 - INFO - Preprocessing data...
+2025-03-24 22:43:30,090 - INFO - Loading and splitting data...
+2025-03-24 22:43:30,674 - INFO - Preprocessing data...
+2025-03-24 22:44:07,808 - INFO - Loading and splitting data...
+2025-03-24 22:44:08,336 - INFO - Preprocessing data...
+2025-03-24 22:45:38,473 - INFO - Loading and splitting data...
+2025-03-24 22:45:39,065 - INFO - Preprocessing data...
+2025-03-24 22:47:37,707 - INFO - Vectorizing text...
+2025-03-24 22:47:58,662 - INFO - Training model...
+2025-03-24 22:58:57,223 - INFO - Loading and splitting data...
+2025-03-24 22:58:57,766 - INFO - Preprocessing data...
+2025-03-24 23:00:47,696 - INFO - Checking label distribution...
+2025-03-24 23:00:47,723 - INFO - Checking for potential data leakage...
+2025-03-24 23:01:20,817 - INFO - Loading and splitting data...
+2025-03-24 23:01:21,492 - INFO - Preprocessing data...
+2025-03-24 23:03:10,063 - INFO - Checking label distribution...
+2025-03-24 23:03:10,085 - INFO - Checking for potential data leakage...
+2025-03-24 23:04:32,220 - INFO - Loading and splitting data...
+2025-03-24 23:05:29,025 - INFO - Loading and splitting data...
+2025-03-24 23:05:29,631 - WARNING - Found 54200 overlapping IDs between train and test sets. Removing from train set.
+2025-03-24 23:06:20,806 - INFO - Loading and splitting data...
+2025-03-24 23:06:21,412 - WARNING - Found 54200 overlapping IDs between train and test sets. Removing from train set.
+2025-03-24 23:06:21,464 - WARNING - Found 10 classes with fewer than 10 samples:
+2025-03-24 23:06:21,467 - WARNING -   documentary: 3 samples
+2025-03-24 23:06:21,467 - WARNING -   drama: 2 samples
+2025-03-24 23:06:21,467 - WARNING -   comedy: 2 samples
+2025-03-24 23:06:21,467 - WARNING -   western: 1 samples
+2025-03-24 23:06:21,467 - WARNING -   fantasy: 1 samples
+2025-03-24 23:06:21,467 - WARNING -   short: 1 samples
+2025-03-24 23:06:21,467 - WARNING -   music: 1 samples
+2025-03-24 23:06:21,469 - WARNING -   family: 1 samples
+2025-03-24 23:06:21,469 - WARNING -   horror: 1 samples
+2025-03-24 23:06:21,469 - WARNING -   history: 1 samples
+2025-03-24 23:06:21,469 - WARNING - Removing classes with insufficient samples to ensure model stability
+2025-03-24 23:08:05,061 - INFO - Loading and splitting data...
+2025-03-24 23:08:05,704 - WARNING - Found 54200 overlapping IDs between train and test sets. Removing from train set.
+2025-03-24 23:08:05,763 - WARNING - Found 10 classes with fewer than 10 samples:
+2025-03-24 23:08:05,763 - WARNING -   documentary: 3 samples
+2025-03-24 23:08:05,763 - WARNING -   drama: 2 samples
+2025-03-24 23:08:05,774 - WARNING -   comedy: 2 samples
+2025-03-24 23:08:05,774 - WARNING -   western: 1 samples
+2025-03-24 23:08:05,774 - WARNING -   fantasy: 1 samples
+2025-03-24 23:08:05,774 - WARNING -   short: 1 samples
+2025-03-24 23:08:05,775 - WARNING -   music: 1 samples
+2025-03-24 23:08:05,775 - WARNING -   family: 1 samples
+2025-03-24 23:08:05,775 - WARNING -   horror: 1 samples
+2025-03-24 23:08:05,775 - WARNING -   history: 1 samples
+2025-03-24 23:10:36,640 - INFO - Loading and splitting data...
+2025-03-24 23:10:37,224 - WARNING - Found 54200 overlapping IDs between train and test sets. Removing from train set.
+2025-03-24 23:10:37,277 - WARNING - Found 7 classes with fewer than 2 samples:
+2025-03-24 23:10:37,279 - WARNING -   western: 1 samples
+2025-03-24 23:10:37,279 - WARNING -   fantasy: 1 samples
+2025-03-24 23:10:37,279 - WARNING -   short: 1 samples
+2025-03-24 23:10:37,279 - WARNING -   music: 1 samples
+2025-03-24 23:10:37,281 - WARNING -   family: 1 samples
+2025-03-24 23:10:37,281 - WARNING -   horror: 1 samples
+2025-03-24 23:10:37,281 - WARNING -   history: 1 samples
+2025-03-24 23:10:37,281 - INFO - Removing 7 classes with only one sample
+2025-03-24 23:10:37,283 - INFO - Class distribution after handling small classes:
+2025-03-24 23:10:37,283 - INFO -   documentary: 3 samples
+2025-03-24 23:10:37,283 - INFO -   drama: 2 samples
+2025-03-24 23:10:37,285 - INFO -   comedy: 2 samples
+2025-03-24 23:10:37,285 - INFO - Cleaning text and adding features...
+2025-03-24 23:12:56,267 - INFO - Loading and splitting data...
+2025-03-24 23:12:56,944 - WARNING - Found 54200 overlapping IDs between train and test sets. Removing from train set.
+2025-03-24 23:12:57,021 - INFO - Initial class distribution:
+2025-03-24 23:12:57,021 - INFO -   documentary: 3 samples
+2025-03-24 23:12:57,021 - INFO -   drama: 2 samples
+2025-03-24 23:12:57,021 - INFO -   comedy: 2 samples
+2025-03-24 23:12:57,021 - INFO -   western: 1 samples
+2025-03-24 23:12:57,021 - INFO -   fantasy: 1 samples
+2025-03-24 23:12:57,021 - INFO -   short: 1 samples
+2025-03-24 23:12:57,021 - INFO -   music: 1 samples
+2025-03-24 23:12:57,021 - INFO -   family: 1 samples
+2025-03-24 23:12:57,021 - INFO -   horror: 1 samples
+2025-03-24 23:12:57,021 - INFO -   history: 1 samples
+2025-03-24 23:12:57,026 - WARNING - Found 7 classes with fewer than 2 samples
+2025-03-24 23:12:57,038 - INFO - Duplicated sample for genre: western
+2025-03-24 23:12:57,041 - INFO - Duplicated sample for genre: fantasy
+2025-03-24 23:12:57,043 - INFO - Duplicated sample for genre: short
+2025-03-24 23:12:57,044 - INFO - Duplicated sample for genre: music
+2025-03-24 23:12:57,046 - INFO - Duplicated sample for genre: family
+2025-03-24 23:12:57,047 - INFO - Duplicated sample for genre: horror
+2025-03-24 23:12:57,050 - INFO - Duplicated sample for genre: history
+2025-03-24 23:12:57,051 - INFO - Class distribution after handling small classes:
+2025-03-24 23:12:57,051 - INFO -   documentary: 3 samples
+2025-03-24 23:12:57,051 - INFO -   drama: 2 samples
+2025-03-24 23:12:57,052 - INFO -   western: 2 samples
+2025-03-24 23:12:57,052 - INFO -   fantasy: 2 samples
+2025-03-24 23:12:57,052 - INFO -   short: 2 samples
+2025-03-24 23:12:57,052 - INFO -   music: 2 samples
+2025-03-24 23:12:57,053 - INFO -   family: 2 samples
+2025-03-24 23:12:57,053 - INFO -   comedy: 2 samples
+2025-03-24 23:12:57,053 - INFO -   horror: 2 samples
+2025-03-24 23:12:57,053 - INFO -   history: 2 samples
+2025-03-24 23:12:57,054 - INFO - Cleaning text and adding features...
+2025-03-24 23:14:57,910 - INFO - Loading and splitting data...
+2025-03-24 23:14:58,504 - WARNING - Found 54200 overlapping IDs between train and test sets. Removing from train set.
+2025-03-24 23:14:58,539 - INFO - Initial class distribution:
+2025-03-24 23:14:58,555 - INFO -   documentary: 3 samples
+2025-03-24 23:14:58,555 - INFO -   drama: 2 samples
+2025-03-24 23:14:58,555 - INFO -   comedy: 2 samples
+2025-03-24 23:14:58,555 - INFO -   western: 1 samples
+2025-03-24 23:14:58,555 - INFO -   fantasy: 1 samples
+2025-03-24 23:14:58,555 - INFO -   short: 1 samples
+2025-03-24 23:14:58,555 - INFO -   music: 1 samples
+2025-03-24 23:14:58,555 - INFO -   family: 1 samples
+2025-03-24 23:14:58,555 - INFO -   horror: 1 samples
+2025-03-24 23:14:58,555 - INFO -   history: 1 samples
+2025-03-24 23:14:58,555 - WARNING - Found 9 classes with fewer than 3 samples
+2025-03-24 23:14:58,565 - INFO - Created variation 1 for genre: drama
+2025-03-24 23:14:58,565 - INFO - Created variation 1 for genre: comedy
+2025-03-24 23:14:58,569 - INFO - Created variation 1 for genre: western
+2025-03-24 23:14:58,570 - INFO - Created variation 2 for genre: western
+2025-03-24 23:14:58,571 - INFO - Created variation 1 for genre: fantasy
+2025-03-24 23:14:58,572 - INFO - Created variation 2 for genre: fantasy
+2025-03-24 23:14:58,574 - INFO - Created variation 1 for genre: short
+2025-03-24 23:14:58,575 - INFO - Created variation 2 for genre: short
+2025-03-24 23:14:58,577 - INFO - Created variation 1 for genre: music
+2025-03-24 23:14:58,579 - INFO - Created variation 2 for genre: music
+2025-03-24 23:14:58,579 - INFO - Created variation 1 for genre: family
+2025-03-24 23:14:58,581 - INFO - Created variation 2 for genre: family
+2025-03-24 23:14:58,581 - INFO - Created variation 1 for genre: horror
+2025-03-24 23:14:58,581 - INFO - Created variation 2 for genre: horror
+2025-03-24 23:14:58,581 - INFO - Created variation 1 for genre: history
+2025-03-24 23:14:58,581 - INFO - Created variation 2 for genre: history
+2025-03-24 23:14:58,587 - INFO - 
+Class distribution after balancing:
+2025-03-24 23:14:58,587 - INFO -   drama: 3 samples
+2025-03-24 23:14:58,588 - INFO -   western: 3 samples
+2025-03-24 23:14:58,588 - INFO -   documentary: 3 samples
+2025-03-24 23:14:58,588 - INFO -   fantasy: 3 samples
+2025-03-24 23:14:58,588 - INFO -   short: 3 samples
+2025-03-24 23:14:58,588 - INFO -   music: 3 samples
+2025-03-24 23:14:58,588 - INFO -   family: 3 samples
+2025-03-24 23:14:58,588 - INFO -   comedy: 3 samples
+2025-03-24 23:14:58,592 - INFO -   horror: 3 samples
+2025-03-24 23:14:58,592 - INFO -   history: 3 samples
+2025-03-24 23:14:58,592 - INFO - Class distribution after handling small classes:
+2025-03-24 23:14:58,592 - INFO -   drama: 3 samples
+2025-03-24 23:14:58,592 - INFO -   western: 3 samples
+2025-03-24 23:14:58,592 - INFO -   documentary: 3 samples
+2025-03-24 23:14:58,592 - INFO -   fantasy: 3 samples
+2025-03-24 23:14:58,592 - INFO -   short: 3 samples
+2025-03-24 23:14:58,592 - INFO -   music: 3 samples
+2025-03-24 23:14:58,592 - INFO -   family: 3 samples
+2025-03-24 23:14:58,592 - INFO -   comedy: 3 samples
+2025-03-24 23:14:58,592 - INFO -   horror: 3 samples
+2025-03-24 23:14:58,595 - INFO -   history: 3 samples
+2025-03-24 23:14:58,595 - INFO - Cleaning text and adding features...
+2025-03-24 23:16:21,007 - INFO - Resource stopwords is already downloaded
+2025-03-24 23:16:21,007 - INFO - Resource punkt is already downloaded
+2025-03-24 23:16:21,007 - INFO - Downloading wordnet...
+2025-03-24 23:16:21,209 - INFO - Successfully downloaded wordnet
+2025-03-24 23:16:21,209 - INFO - Loading and splitting data...
+2025-03-24 23:16:21,813 - WARNING - Found 54200 overlapping IDs between train and test sets. Removing from train set.
+2025-03-24 23:16:21,877 - INFO - Initial class distribution:
+2025-03-24 23:16:21,877 - INFO -   documentary: 3 samples
+2025-03-24 23:16:21,877 - INFO -   drama: 2 samples
+2025-03-24 23:16:21,877 - INFO -   comedy: 2 samples
+2025-03-24 23:16:21,877 - INFO -   western: 1 samples
+2025-03-24 23:16:21,877 - INFO -   fantasy: 1 samples
+2025-03-24 23:16:21,877 - INFO -   short: 1 samples
+2025-03-24 23:16:21,877 - INFO -   music: 1 samples
+2025-03-24 23:16:21,877 - INFO -   family: 1 samples
+2025-03-24 23:16:21,877 - INFO -   horror: 1 samples
+2025-03-24 23:16:21,877 - INFO -   history: 1 samples
+2025-03-24 23:16:21,877 - WARNING - Found 9 classes with fewer than 3 samples
+2025-03-24 23:16:21,894 - INFO - Created variation 1 for genre: drama
+2025-03-24 23:16:21,895 - INFO - Created variation 1 for genre: comedy
+2025-03-24 23:16:21,897 - INFO - Created variation 1 for genre: western
+2025-03-24 23:16:21,898 - INFO - Created variation 2 for genre: western
+2025-03-24 23:16:21,899 - INFO - Created variation 1 for genre: fantasy
+2025-03-24 23:16:21,900 - INFO - Created variation 2 for genre: fantasy
+2025-03-24 23:16:21,902 - INFO - Created variation 1 for genre: short
+2025-03-24 23:16:21,904 - INFO - Created variation 2 for genre: short
+2025-03-24 23:16:21,905 - INFO - Created variation 1 for genre: music
+2025-03-24 23:16:21,906 - INFO - Created variation 2 for genre: music
+2025-03-24 23:16:21,907 - INFO - Created variation 1 for genre: family
+2025-03-24 23:16:21,909 - INFO - Created variation 2 for genre: family
+2025-03-24 23:16:21,910 - INFO - Created variation 1 for genre: horror
+2025-03-24 23:16:21,911 - INFO - Created variation 2 for genre: horror
+2025-03-24 23:16:21,913 - INFO - Created variation 1 for genre: history
+2025-03-24 23:16:21,915 - INFO - Created variation 2 for genre: history
+2025-03-24 23:16:21,915 - INFO - 
+Class distribution after balancing:
+2025-03-24 23:16:21,915 - INFO -   drama: 3 samples
+2025-03-24 23:16:21,917 - INFO -   western: 3 samples
+2025-03-24 23:16:21,917 - INFO -   documentary: 3 samples
+2025-03-24 23:16:21,917 - INFO -   fantasy: 3 samples
+2025-03-24 23:16:21,917 - INFO -   short: 3 samples
+2025-03-24 23:16:21,917 - INFO -   music: 3 samples
+2025-03-24 23:16:21,917 - INFO -   family: 3 samples
+2025-03-24 23:16:21,917 - INFO -   comedy: 3 samples
+2025-03-24 23:16:21,917 - INFO -   horror: 3 samples
+2025-03-24 23:16:21,917 - INFO -   history: 3 samples
+2025-03-24 23:16:21,917 - INFO - Class distribution after handling small classes:
+2025-03-24 23:16:21,917 - INFO -   drama: 3 samples
+2025-03-24 23:16:21,917 - INFO -   western: 3 samples
+2025-03-24 23:16:21,917 - INFO -   documentary: 3 samples
+2025-03-24 23:16:21,917 - INFO -   fantasy: 3 samples
+2025-03-24 23:16:21,920 - INFO -   short: 3 samples
+2025-03-24 23:16:21,920 - INFO -   music: 3 samples
+2025-03-24 23:16:21,920 - INFO -   family: 3 samples
+2025-03-24 23:16:21,920 - INFO -   comedy: 3 samples
+2025-03-24 23:16:21,920 - INFO -   horror: 3 samples
+2025-03-24 23:16:21,921 - INFO -   history: 3 samples
+2025-03-24 23:16:21,921 - INFO - Cleaning text and adding features...
+2025-03-24 23:19:42,502 - INFO - Resource stopwords is already downloaded
+2025-03-24 23:19:42,502 - INFO - Resource punkt is already downloaded
+2025-03-24 23:19:42,502 - INFO - Downloading wordnet...
+2025-03-24 23:19:42,767 - INFO - Successfully downloaded wordnet
+2025-03-24 23:19:42,767 - INFO - Loading and splitting data...
+2025-03-24 23:19:43,399 - WARNING - Found 54200 overlapping IDs between train and test sets. Removing from train set.
+2025-03-24 23:19:43,461 - INFO - Initial class distribution:
+2025-03-24 23:19:43,461 - INFO -   documentary: 3 samples
+2025-03-24 23:19:43,461 - INFO -   drama: 2 samples
+2025-03-24 23:19:43,461 - INFO -   comedy: 2 samples
+2025-03-24 23:19:43,461 - INFO -   western: 1 samples
+2025-03-24 23:19:43,461 - INFO -   fantasy: 1 samples
+2025-03-24 23:19:43,461 - INFO -   short: 1 samples
+2025-03-24 23:19:43,461 - INFO -   music: 1 samples
+2025-03-24 23:19:43,461 - INFO -   family: 1 samples
+2025-03-24 23:19:43,461 - INFO -   horror: 1 samples
+2025-03-24 23:19:43,461 - INFO -   history: 1 samples
+2025-03-24 23:19:43,461 - WARNING - Found 9 classes with fewer than 3 samples
+2025-03-24 23:19:43,471 - INFO - Created variation 1 for genre: drama
+2025-03-24 23:19:43,471 - INFO - Created variation 1 for genre: comedy
+2025-03-24 23:19:43,481 - INFO - Created variation 1 for genre: western
+2025-03-24 23:19:43,482 - INFO - Created variation 2 for genre: western
+2025-03-24 23:19:43,484 - INFO - Created variation 1 for genre: fantasy
+2025-03-24 23:19:43,487 - INFO - Created variation 2 for genre: fantasy
+2025-03-24 23:19:43,490 - INFO - Created variation 1 for genre: short
+2025-03-24 23:19:43,491 - INFO - Created variation 2 for genre: short
+2025-03-24 23:19:43,498 - INFO - Created variation 1 for genre: music
+2025-03-24 23:19:43,499 - INFO - Created variation 2 for genre: music
+2025-03-24 23:19:43,500 - INFO - Created variation 1 for genre: family
+2025-03-24 23:19:43,503 - INFO - Created variation 2 for genre: family
+2025-03-24 23:19:43,505 - INFO - Created variation 1 for genre: horror
+2025-03-24 23:19:43,507 - INFO - Created variation 2 for genre: horror
+2025-03-24 23:19:43,509 - INFO - Created variation 1 for genre: history
+2025-03-24 23:19:43,511 - INFO - Created variation 2 for genre: history
+2025-03-24 23:19:43,512 - INFO - 
+Class distribution after balancing:
+2025-03-24 23:19:43,513 - INFO -   drama: 3 samples
+2025-03-24 23:19:43,513 - INFO -   western: 3 samples
+2025-03-24 23:19:43,514 - INFO -   documentary: 3 samples
+2025-03-24 23:19:43,514 - INFO -   fantasy: 3 samples
+2025-03-24 23:19:43,515 - INFO -   short: 3 samples
+2025-03-24 23:19:43,515 - INFO -   music: 3 samples
+2025-03-24 23:19:43,516 - INFO -   family: 3 samples
+2025-03-24 23:19:43,516 - INFO -   comedy: 3 samples
+2025-03-24 23:19:43,517 - INFO -   horror: 3 samples
+2025-03-24 23:19:43,517 - INFO -   history: 3 samples
+2025-03-24 23:19:43,517 - INFO - Class distribution after handling small classes:
+2025-03-24 23:19:43,518 - INFO -   drama: 3 samples
+2025-03-24 23:19:43,518 - INFO -   western: 3 samples
+2025-03-24 23:19:43,518 - INFO -   documentary: 3 samples
+2025-03-24 23:19:43,519 - INFO -   fantasy: 3 samples
+2025-03-24 23:19:43,519 - INFO -   short: 3 samples
+2025-03-24 23:19:43,519 - INFO -   music: 3 samples
+2025-03-24 23:19:43,519 - INFO -   family: 3 samples
+2025-03-24 23:19:43,520 - INFO -   comedy: 3 samples
+2025-03-24 23:19:43,520 - INFO -   horror: 3 samples
+2025-03-24 23:19:43,520 - INFO -   history: 3 samples
+2025-03-24 23:19:43,520 - INFO - Cleaning text and adding features...
+2025-03-24 23:19:46,273 - WARNING - Combining 10 rare classes into 'other' category
+2025-03-24 23:19:46,273 - INFO - Class distribution after grouping rare classes:
+2025-03-24 23:19:46,273 - INFO -   other: 30 samples
+2025-03-24 23:19:46,277 - INFO - Using test_size=0.200 for stratified split
+2025-03-24 23:19:46,277 - INFO - Applying SMOTE oversampling...
+2025-03-24 23:24:29,266 - INFO - Loading data...
+2025-03-24 23:24:29,828 - INFO - Cleaning data...
+2025-03-24 23:28:17,777 - INFO - Resource stopwords already available
+2025-03-24 23:28:17,777 - INFO - Resource punkt already available
+2025-03-24 23:28:17,777 - INFO - Downloading wordnet...
+2025-03-24 23:28:17,974 - INFO - Successfully downloaded wordnet
+2025-03-24 23:28:17,974 - INFO - Loading and validating data...
+2025-03-24 23:28:18,641 - INFO - Cleaning text data...
+2025-03-24 23:29:52,527 - INFO - Splitting data...
+2025-03-24 23:29:52,604 - INFO - Vectorizing text...
+2025-03-24 23:30:08,826 - ERROR - Fatal error in main: y contains previously unseen labels: "Edgar's Lunch (1998)"
+2025-03-24 23:37:31,408 - INFO - Resource stopwords already available
+2025-03-24 23:37:31,408 - INFO - Resource punkt already available
+2025-03-24 23:37:31,418 - INFO - Downloading wordnet...
+2025-03-24 23:37:31,629 - INFO - Successfully downloaded wordnet
+2025-03-24 23:37:31,629 - INFO - Loading and validating data...
+2025-03-24 23:37:32,360 - INFO - Cleaning text data...
+2025-03-24 23:39:29,707 - INFO - Splitting data...
+2025-03-24 23:39:29,821 - INFO - Vectorizing text...
+2025-03-24 23:39:49,761 - INFO - Balancing classes...
+2025-03-24 23:39:58,470 - INFO - SMOTE applied successfully
+2025-03-24 23:39:58,470 - INFO - Training model...
+2025-03-24 23:55:00,745 - INFO - 
+Validation Set Evaluation:
+2025-03-24 23:55:00,745 - INFO - Accuracy: 0.4869
+2025-03-24 23:55:00,757 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+      action       0.31      0.33      0.32       263
+       adult       0.42      0.41      0.42       118
+   adventure       0.28      0.23      0.25       155
+   animation       0.26      0.16      0.20       100
+   biography       0.02      0.02      0.02        53
+      comedy       0.50      0.50      0.50      1490
+       crime       0.14      0.13      0.13       101
+ documentary       0.71      0.66      0.69      2619
+       drama       0.53      0.55      0.54      2723
+      family       0.18      0.18      0.18       157
+     fantasy       0.08      0.11      0.09        65
+   game-show       0.58      0.49      0.53        39
+     history       0.04      0.06      0.05        49
+      horror       0.54      0.49      0.52       441
+       music       0.48      0.43      0.45       146
+     musical       0.15      0.22      0.18        55
+     mystery       0.15      0.16      0.15        64
+        news       0.13      0.11      0.12        36
+  reality-tv       0.33      0.26      0.29       177
+     romance       0.10      0.24      0.14       134
+      sci-fi       0.38      0.39      0.38       129
+       short       0.33      0.34      0.33      1015
+       sport       0.43      0.43      0.43        86
+   talk-show       0.26      0.31      0.28        78
+    thriller       0.23      0.19      0.21       318
+         war       0.33      0.15      0.21        26
+     western       0.81      0.67      0.73       206
+
+    accuracy                           0.49     10843
+   macro avg       0.32      0.30      0.31     10843
+weighted avg       0.50      0.49      0.49     10843
+
+2025-03-24 23:55:00,773 - INFO - Misclassified samples: 5564
+2025-03-24 23:55:01,069 - INFO - 
+Test Set Evaluation:
+2025-03-24 23:55:01,070 - INFO - Accuracy: 0.4828
+2025-03-24 23:55:01,095 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+      action       0.28      0.27      0.27      1314
+       adult       0.40      0.34      0.37       590
+   adventure       0.25      0.22      0.23       775
+   animation       0.19      0.10      0.13       498
+   biography       0.03      0.03      0.03       264
+      comedy       0.48      0.47      0.47      7446
+       crime       0.11      0.12      0.11       505
+ documentary       0.71      0.67      0.69     13096
+       drama       0.54      0.56      0.55     13612
+      family       0.18      0.18      0.18       783
+     fantasy       0.11      0.12      0.12       322
+   game-show       0.65      0.56      0.60       193
+     history       0.04      0.05      0.04       243
+      horror       0.53      0.48      0.50      2204
+       music       0.49      0.47      0.47       731
+     musical       0.07      0.10      0.08       276
+     mystery       0.07      0.07      0.07       318
+        news       0.15      0.10      0.12       181
+  reality-tv       0.30      0.23      0.26       883
+     romance       0.13      0.31      0.18       672
+      sci-fi       0.33      0.30      0.31       646
+       short       0.32      0.34      0.33      5072
+       sport       0.41      0.40      0.40       431
+   talk-show       0.28      0.28      0.28       391
+    thriller       0.20      0.19      0.20      1590
+         war       0.32      0.17      0.23       132
+     western       0.82      0.72      0.77      1032
+
+    accuracy                           0.48     54200
+   macro avg       0.31      0.29      0.30     54200
+weighted avg       0.49      0.48      0.49     54200
+
+2025-03-24 23:55:01,137 - INFO - Misclassified samples: 28030
+2025-03-24 23:55:01,151 - INFO - Generating SHAP explanations...
+2025-03-24 23:55:01,151 - WARNING - SHAP explanation failed: 'coo_matrix' object is not subscriptable
+2025-03-24 23:55:01,151 - INFO - Saving artifacts...
+2025-03-24 23:55:01,272 - INFO - Training completed successfully!

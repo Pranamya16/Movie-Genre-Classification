@@ -1,0 +1,7 @@
+streamlit
+numpy
+pandas
+scikit-learn>=1.0.0
+nltk
+joblib
+matplotlib  # For visualizing training progress

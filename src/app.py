@@ -55,10 +55,10 @@ def clean_text(text):
 
 # Load model and related components
 try:
-    model = joblib.load('model/lr_model.pkl')
-    tfidf = joblib.load('model/tfidf_vectorizer.pkl')
-    le = joblib.load('model/label_encoder.pkl')
-    misclassified = pd.read_csv('model/misclassified_examples.csv')
+    model = joblib.load('../model/lr_model.pkl')
+    tfidf = joblib.load('../model/tfidf_vectorizer.pkl')
+    le = joblib.load('../model/label_encoder.pkl')
+    misclassified = pd.read_csv('../model/misclassified_examples.csv')
     logging.info("Successfully loaded model and related components")
 except Exception as e:
     logging.error(f"Error loading model components: {str(e)}")

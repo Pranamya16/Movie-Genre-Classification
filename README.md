@@ -22,7 +22,7 @@ Develop a machine learning model to classify movies into genres based on plot de
 2. **Run the app.py**
    ```bash
    streamlit run src/app.py
-OR
+   OR
    ```bash
    python -m streamlit run src/app.py
    

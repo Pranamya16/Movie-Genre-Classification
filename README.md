@@ -21,5 +21,5 @@ Develop a machine learning model to classify movies into genres based on plot de
    cd movie-genre-classification
 2. **Run the app.py**
    ```bash
-      streamlit run src/app.py
+   streamlit run src/app.py
    
